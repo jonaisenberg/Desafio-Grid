@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container_general {
+    background-color: rgb(120, 173, 175);
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "products cards"
+    "footer footer";
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 208, 211);
+    grid-area: navbar;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 1rem;
+
+}
+.products {
+    grid-area: products;
+}
+
+.category {
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.content {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding-left: 20px;
+}
+
+.amount{
+    color: #02316e;
+}
+
+.cards {
+    gap: 30px;
+    margin: 30px;
+    grid-area: cards;
+    border-radius: 8px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h3{
+    margin: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.price {
+    margin: 10px;
+}
+
+.container-bike {
+    display: grid;
+    background-color: white;
+}
+
+.bike {
+    width: 100%;
+    height: auto;
+}
+
+.container-saddles{
+    display: grid;
+    background-color: white;
+}
+
+.saddles{
+    width: 100%;
+    height: auto;
+}
+
+.container-cranks{
+    display: grid;
+    background-color: white;
+}
+
+.cranks{
+    width: 100%;
+    height: auto;
+}
+
+.container-frame{
+    display: grid;
+    background-color: white;
+}
+
+.frame{
+    width: 100%;
+    height: 350px;
+}
+
+.container-tires{
+    display: grid;
+    background-color: white;
+}
+
+.tires{
+    width: 100%;
+    height: 350px;
+}
+
+.container-wheels{
+    display: grid;
+    text-align: center;
+    background-color: white;
+}
+
+.wheels{
+    width: 100%;
+    height: 350px;
+}
+
+
+.buy {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #8facca;
+    padding: 25px;
+    border: none;
+}
+
+.buy:hover{
+    background-color: #cfdff0;
+    color: #02316e;
+}
+
+footer {
+    background-color: white;
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Lato', sans-serif;
+}
